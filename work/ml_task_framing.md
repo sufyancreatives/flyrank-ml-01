@@ -39,7 +39,7 @@ A fixed rule (like flagging all pages with CTR < 2%) fails because:
 
 2. A rule produces a binary flag, not a ranked list for prioritization. Content teams need to see which pages to prioritize, not just a binary label.
 
-3. A rule cannot weight by impression volume like an ML model. A page losing clicks at 50,000 impressions is more urgent than the same CTR gap at 500 impressions.
+3. A fixed rule can't combine engagement rate and CTR efficiently. A page losing clicks at 50,000 impressions is more urgent than the same CTR gap at 500 impressions.
 
 The scoring approach handles all three by computing position-adjusted gaps and combining multiple signals into one weighted score, which is more efficient than fixed hand rules.
 
